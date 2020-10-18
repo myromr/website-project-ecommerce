@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-evenly;
     text-align: center;
-    background-image: url(../img/cartBackground.jpg);
+    background-image: url(../img/cartBackgroundMobile.png);
 }
 
 .cartBottle {
