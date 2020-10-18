@@ -1,0 +1,415 @@
+@font-face {
+    src: url(../fonts/Gilroy-Light.otf);
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    src: url(../fonts/Gilroy-ExtraBold.otf);
+    font-family: 'Gilroy';
+    font-style: bold;
+    font-weight: bold;
+}
+
+body {
+    margin: 0;
+    font-family: 'Gilroy';
+    font-weight: 400;
+    padding: 0;
+}
+
+
+input {
+    border: none;
+    font-family: 'Gilroy';
+    width: 19em;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.grayContainer {
+    background-color: #434142;
+    padding-bottom: 130%;
+    margin:-2px;
+}
+
+.container {
+    text-align: center;
+    padding: .8em;
+}
+
+.logo {
+    width: 85px;
+}
+
+.hide-mobile {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 38px;
+    margin-top: 23%;
+}
+
+
+h2 {
+    margin: .8em 1em 1em 1em;
+    font-size: 3em;
+    color: white;
+    font-weight: normal;
+}
+
+.cta {
+    font-weight: bolder;
+    background: white;
+    width: calc(25% - 1em);
+    display: block;
+    border-radius: 40px;
+    color: #434142;
+    padding: .5em;
+    text-decoration: none;
+    font-size: 2em;
+    margin: 3% auto 7%;
+    position: relative;
+    z-index: 4;
+}
+
+.mainBottle {
+    width: 70%;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -140%;
+}
+
+.imageContainer {
+    background-image: url(../img/imageContainer.jpg);
+    background-position: center;
+    padding: 10em 0 10em 0;
+    margin-top: -89%;
+}
+
+.best {
+    font-size: 3em;
+    font-weight: bold;
+    position: relative;
+    top: 3.5em;
+    padding: 0 0 1em 0;
+    margin: 2em .8em 0em .8em;
+}
+
+.footerContainer {
+    background-color: #E9DCCB;
+}
+
+.logoAddress p {
+    margin: 0;
+    padding: 0;
+    font-size: .8em;
+}
+
+.signUp th {
+    background-color: white;
+    text-align: center;
+    margin: 0;
+    padding: .3em;
+    font-weight: normal;
+    color: #434142;
+}
+
+.signUp a {
+    color: #434142;
+    text-decoration: none;
+    background-color: whitesmoke;
+}
+
+table {
+    margin: 0 auto;
+}
+
+.footerLinks {
+    padding: 1em;
+    font-size: .89em;
+}
+
+ul.footerLinks {
+    margin: 0 auto;
+}
+
+
+ul.footerLinks li {
+    display: inline-block;
+}
+
+ul.footerLinks li a{
+    color: #909090;
+    text-decoration: none;
+}
+
+nav ul {
+    position: fixed;
+    width: 40%;
+    top: 0;
+    right: 0;
+    text-align: left;
+    background: #2c2b2b;
+    height: 100%;
+    z-index: 7;
+    padding-top: 3em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 1em 2em;
+    background-color: #3a3737;
+}
+
+nav ul li a:hover {
+    background-color: #5a5555;
+}
+
+.exit-btn {
+    margin-bottom: 1em;
+    margin-top: -1.3em;
+    text-align: right;
+    padding: 0 1.4em;
+}
+
+.exit-btn img {
+    cursor: pointer;
+    width: 32px;
+}
+
+
+.sway {
+    animation: sway1 6s infinite;
+    transform-origin: 50% 100% 0;
+}
+@keyframes sway1 {
+    0%, 100%{ transform: rotate(-4deg);}
+    50%{ transform: rotate(2deg); }
+}
+
+@media only screen and (min-width: 530px) {
+
+
+    .mainBottle {
+        width: 60%;
+    }
+
+    .imageContainer {
+        margin-top: -79%;
+    }
+
+}
+
+@media only screen and (min-width: 650px) {
+
+
+    .mainBottle {
+        width: 50%;
+    }
+
+    .imageContainer {
+        margin-top: -65%;
+    }
+
+    h2 {
+        margin: 1em;
+        font-size: 4em;
+        color: white;
+        font-weight: normal;
+    }
+
+}
+
+@media only screen and (min-width: 730px) {
+
+
+    .mainBottle {
+        width: 50%;
+    }
+
+    .imageContainer {
+        padding: 9em 0 20em 0;
+        margin-top: -65%;
+    }
+
+    .imageContainer h1 {
+        font-weight: bold;
+        font-size: 6em;
+        text-align: left;
+        position: relative;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .menu {
+        width: 45px;
+        margin-top: 23%;
+    }
+
+}
+
+@media only screen and (min-width: 975px) {
+
+
+    .mainBottle {
+        width: 40%;
+    }
+
+    .imageContainer {
+        padding: 2em 0 20em 0;
+        margin-top: -51%;
+    }
+
+    .imageContainer h1 {
+        font-weight: bold;
+        font-size: 7em;
+        text-align: left;
+        position: relative;
+        margin-top: 1em;
+    }
+
+    h2 {
+        font-size: 6em;
+        color: white;
+        font-weight: normal;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 -5em 0 5em;
+        padding: 0;
+    }
+
+    ul.footerLinks li {
+        display: table;
+        padding: .5em;
+        margin: 0em -1em 0 3em;
+    }
+
+    body {
+        overflow-x: hidden
+    }
+
+    table {
+        margin: auto auto auto;
+        padding: 4em;
+    }
+
+    @media only screen and (min-width: 1024px) {
+
+        h2 {
+            font-size: 5em;
+            padding: 0;
+            margin: auto 20%;
+            position: relative;
+            right: 2.5em;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            padding: 0;
+            position: relative;
+            top: 8em;
+        }
+
+        .mainBottle {
+            top: 66em;
+            position: relative;
+            width: 17%;
+        }
+    
+        .imageContainer {
+            padding: 0em 0 20em 0;
+            margin-top:89.3%;
+        }
+    
+        .imageContainer h1 {
+            font-weight: bold;
+            font-size: 7em;
+            text-align: left;
+            position: relative;
+            margin-top: -4em;
+        }
+
+        .cta {
+            font-weight: bolder;
+            background: white;
+            width: calc(25% - 1em);
+            display: block;
+            border-radius: 40px;
+            color: #434142;
+            padding: .5em;
+            text-decoration: none;
+            font-size: 2em;
+            position: relative;
+            z-index: 4;
+            margin: 3em;
+        }
+
+        .grayContainer {
+            background-color: #434142;
+            padding-bottom: 50%;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .show-desktop {
+            display: block;
+            margin: 0 auto 13% auto;
+        }
+
+        .hide-desktop {
+            display: none;
+        }
+
+        nav ul {
+            position: inherit;
+            width: auto;
+            background: none;
+            height: auto;
+            display: flex;
+            padding-top: 0;
+        }
+
+        nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            background-color: inherit;
+            text-align: center;
+            padding: 0;
+            margin: 1em 2em;
+        }
+
+        nav ul li a:hover {
+            background-color: inherit;
+        }
+    }
+
+}

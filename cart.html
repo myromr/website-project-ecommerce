@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart | TA'HO</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles2.css">
+    <link rel="stylesheet" href="css/fonts.css">
+</head>
+<body>
+
+    <div class="cartContainer">
+        <div class="columnContainer">
+            <div class="container2">
+
+                <div class="leftColumn hide-mobile show-desktop">
+                </div>
+
+                <div class="rightColumn">
+
+                    <div class="pseudoHeader">
+                        <a href="index.html"><img src="img/logoGray.svg" alt="TA'HO" class="logo"></a>
+                        <nav>
+                            <a href="#" class="hide-desktop">
+                                <img src="img/hamGray.svg" alt="toggle menu" class="menu" id="menu">
+                            </a>
+        
+                            <ul class="show-desktop hide-mobile" id="nav">
+                                <li id="exit" class="exit-btn hide-desktop">
+                                    <img src="img/exit.svg" alt="exit menu">
+                                </li>
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="cart.html">CART</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <img src="img/bottleTAHO.svg" alt="cartBottle" class="cartBottle">
+                    <h4>TA'HO Soy Milk <span class="normal">(10 X 250ML BOTTLES)</span></h4>
+                    <p class="pack">$59 Pack (10 X 250ML BOTTLES)</p>
+
+                    <div class="cartAddMinus">
+                        <div id="input_div">
+                            <input type="button" value="-" id="moins" onclick="minus()" class="plus-minus">
+                            <input type="number"  value="1" id="count">
+                            <input type="button" value="+" id="plus" onclick="plus()" class="plus-minus">
+                       </div>
+                        <p class="estiPrice price">$<span id=price1></span></p>
+                    </div>
+
+                    <div class="checkOutContainer">
+                        <hr class="grayBorder">
+
+                        <p class="totalPrice price">$<span id=price2></span></p>
+
+                        <a href="#" class="cta2">CHECKOUT</a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>    
+    <script src="script.js"></script>
+</body>
+</html>
